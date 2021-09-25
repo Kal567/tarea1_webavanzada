@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '4.0.4'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation  'com.sparkjava:spark-core:2.9.1'
+    implementation  'com.sparkjava:spark-template-freemarker:2.5.5'
+    implementation  'org.freemarker:freemarker:2.3.26-incubating'
+    implementation  "org.slf4j:slf4j-simple:1.7.21"
+    implementation  group: 'org.webjars.bower', name: 'jquery', version: '3.4.1'
+}
+
+test {
+    useJUnitPlatform()
+}
