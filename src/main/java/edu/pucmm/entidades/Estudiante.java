@@ -1,22 +1,28 @@
+package edu.pucmm.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Estudiante {
-    private Integer Id;
+    @Id
+    private int id;
+
+    private String matricula;
     private String nombre;
     private String apellido;
-    private String matricula;
+    private String telefono;
 
-    public Estudiante(Integer Id, String nombre, String apellido, String matricula) {
-        this.Id = Id;
+    public Estudiante(int id, String matricula, String nombre, String apellido, String telefono) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.matricula = matricula;
+        this.telefono = telefono;
     }
 
-    public Integer getId() {
-        return Id;
-    }
+    public Estudiante() {
 
-    public void setId(Integer id) {
-        Id = id;
     }
 
     public String getNombre() {
@@ -41,5 +47,21 @@ public class Estudiante {
 
     public void setMatricula(String matricula) {
         this.matricula = matricula;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 }

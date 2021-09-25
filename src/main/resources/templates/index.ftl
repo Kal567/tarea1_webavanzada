@@ -11,11 +11,14 @@
 </head>
 <body>
 <div>
-    <a href="/home/" class="btn btn-link btn-outline-primary" style="margin-top:20px; margin-bottom:20px">Home</a>
-    <a href="/listado-estudiantes/" class="btn btn-link btn-outline-primary">Listado estudiantes</a>
+    <a href="/listado-estudiantes" class="btn btn-link btn-outline-primary">Listado estudiantes</a>
 </div>
-<form action = "/registrar-estudiante/" method="post">
+<form action = "/registrar-estudiante" method="post">
     <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="id">ID</label>
+            <input name="id" type="number" class="form-control" id="id" placeholder="1">
+        </div>
         <div class="form-group col-md-6">
             <label for="matricula">Matrícula</label>
             <input name="matricula" type="text" class="form-control" id="matricula" placeholder="20101314">
@@ -27,6 +30,10 @@
         <div class="form-group col-md-6">
             <label for="apellido">Apellido</label>
             <input name="apellido" type="text" class="form-control" id="apellido" placeholder="Diaz">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="telefono">Teléfono</label>
+            <input name="telefono" type="text" class="form-control" id="telefono" placeholder="Diaz">
         </div>
     </div>
     <button type="submit" class="btn btn-primary" style="margin-left: 50px">Registrar</button>
