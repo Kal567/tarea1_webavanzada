@@ -33,7 +33,7 @@
         </div>
         <div class="form-group col-md-6">
             <label for="telefono">Teléfono</label>
-            <input name="telefono" type="text" class="form-control" id="telefono" placeholder="Diaz">
+            <input name="telefono" type="text" class="form-control" id="telefono" placeholder="8096543210">
         </div>
     </div>
     <button type="submit" class="btn btn-primary" style="margin-left: 50px">Registrar</button>
